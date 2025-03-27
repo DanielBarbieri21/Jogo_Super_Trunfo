@@ -63,4 +63,4 @@ Jogador 2: Seleciona "São Paulo" (PIB: 1550.5).
 Ação: Clique em "Comparar PIB".
 Resultado: "São Paulo vence!" → Jogador 2 ganha 1 ponto.
 
-# Sinta-se à vontade para abrir issues ou enviar pull requests
+## Sinta-se à vontade para abrir issues ou enviar pull requests
