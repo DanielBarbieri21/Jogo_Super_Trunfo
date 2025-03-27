@@ -1,5 +1,5 @@
-# Super Trunfo de Países
-Bem-vindo ao Super Trunfo de Países, um jogo digital inspirado no clássico Super Trunfo, desenvolvido em C com interface gráfica usando a biblioteca GTK+ 3.0. Este projeto representa os 26 estados do Brasil mais o Distrito Federal (27 cartas no total), permitindo que dois jogadores comparem atributos como população, PIB, área, pontos turísticos e densidade populacional. O jogo suporta edição de cartas, comparação interativa e salvamento/carregamento de dados em arquivo.
+# Super Trunfo dos Estados do Brasil 
+Bem-vindo ao Super Trunfo dos Estados do Brasil , um jogo digital inspirado no clássico Super Trunfo, desenvolvido em C com interface gráfica usando a biblioteca GTK+ 3.0. Este projeto representa os 26 estados do Brasil mais o Distrito Federal (27 cartas no total), permitindo que dois jogadores comparem atributos como população, PIB, área, pontos turísticos e densidade populacional. O jogo suporta edição de cartas, comparação interativa e salvamento/carregamento de dados em arquivo.
 
 # Funcionalidades
 Cartas Pré-carregadas: 27 cartas representando todos os estados brasileiros e o Distrito Federal com valores fictícios iniciais.
