@@ -4,7 +4,6 @@
   <img src="https://img.shields.io/badge/Version-2.0%20Moderna-brightgreen" alt="Versão">
   <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-blue" alt="Plataforma">
   <img src="https://img.shields.io/badge/Language-C%20%2B%20GTK%2B3-orange" alt="Linguagem">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="Licença">
 </div>
 
 <div align="center">
@@ -227,3 +226,4 @@ sudo apt-get install libgtk-3-dev
 <div align="center">
   <p>⭐ Se gostou do projeto, deixe uma estrela! ⭐</p>
 </div>
+
