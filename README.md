@@ -1,66 +1,229 @@
-# Super Trunfo dos Estados do Brasil 
-Bem-vindo ao Super Trunfo dos Estados do Brasil , um jogo digital inspirado no clássico Super Trunfo, desenvolvido em C com interface gráfica usando a biblioteca GTK+ 3.0. Este projeto representa os 26 estados do Brasil mais o Distrito Federal (27 cartas no total), permitindo que dois jogadores comparem atributos como população, PIB, área, pontos turísticos e densidade populacional. O jogo suporta edição de cartas, comparação interativa e salvamento/carregamento de dados em arquivo.
+# 🇧🇷 Super Trunfo dos Estados do Brasil - Edição Moderna
 
-# Funcionalidades
-Cartas Pré-carregadas: 27 cartas representando todos os estados brasileiros e o Distrito Federal com valores fictícios iniciais.
-Interface Gráfica: Desenvolvida com GTK+ 3.0, inclui menus suspensos, campos de entrada e botões para interação.
-Edição de Cartas: Permite ajustar os atributos de cada carta.
-Comparação: Compare atributos entre duas cartas selecionadas e veja o resultado em um diálogo.
-# Persistência: Salve e carregue as cartas em um arquivo cartas.txt.
-# Requisitos
-Sistema Operacional: Windows (testado no Windows 10/11 com MSYS2).
-Ferramentas:
-GCC (compilador C).
-MSYS2 (para instalar GTK+ e dependências no Windows).
-GTK+ 3.0 (biblioteca gráfica).
-Instalação no Windows
-1. Instalar o MSYS2
-Baixe o instalador em msys2.org (msys2-x86_64-latest.exe).
-Instale em C:\msys64 (ou outro diretório de sua escolha).
-Abra o terminal "MSYS2 MSYS" e atualize o sistema:
+<div align="center">
+  <img src="https://img.shields.io/badge/Version-2.0%20Moderna-brightgreen" alt="Versão">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-blue" alt="Plataforma">
+  <img src="https://img.shields.io/badge/Language-C%20%2B%20GTK%2B3-orange" alt="Linguagem">
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="Licença">
+</div>
 
-Uma janela gráfica será aberta com a interface do jogo.
-Como Jogar com 2 Jogadores
-Regras
-Cada jogador controla um conjunto de cartas.
-Em cada turno, um jogador escolhe um atributo para comparar, e o maior valor vence.
-O vencedor do turno "leva" a carta do oponente (anote os pontos manualmente).
-O jogo continua até que os jogadores decidam parar ou todas as cartas sejam disputadas.
-Passo a Passo
-Divisão das Cartas:
-Jogador 1: Controla as primeiras 13 cartas (Acre a Mato Grosso do Sul).
-Jogador 2: Controla as últimas 14 cartas (Minas Gerais a Tocantins).
-Anote isso em um papel ou memorize.
-Iniciar o Jogo:
-Execute ./super_trunfo_gui para abrir a interface.
-Turno do Jogador 1:
-No primeiro menu suspenso (esquerda), selecione uma carta sua (ex.: "Acre").
-(Opcional) Edite os campos (estado, população, etc.) e clique em "Cadastrar Carta".
-Anuncie o atributo a comparar (ex.: "Vamos comparar PIB!").
-Turno do Jogador 2:
-No segundo menu suspenso (abaixo do primeiro), selecione uma carta sua (ex.: "São Paulo").
-(Opcional) Edite a carta usando o primeiro menu e "Cadastrar Carta" antes de selecioná-la no segundo menu.
-Comparar:
-Clique no botão correspondente ao atributo escolhido (ex.: "Comparar PIB").
-Um diálogo mostrará o resultado (ex.: "São Paulo: 1550,5 vs. Acre: 15,5 - Carta 2 vence!").
-Anotar o Resultado:
-Se "Carta 1" vencer, Jogador 1 ganha 1 ponto.
-Se "Carta 2" vencer, Jogador 2 ganha 1 ponto.
-Se empatar, ninguém pontua.
-Anote os pontos em um papel.
-Próximo Turno:
-Troque os papéis: Jogador 2 escolhe o atributo e a carta no primeiro menu, Jogador 1 responde no segundo.
-Repita os passos 3 a 6.
-Finalizar:
-Continue até decidirem parar ou todas as cartas serem disputadas.
-Alguns os pontos para determinar o vencedor.
-Salvar Progresso:
-Clique em "Salvar Cartas" para gravar os dados editados em cartas.txt.
-Na próxima vez, use "Carregar Cartas" para retomar.
-Exemplo de Turno
-Jogador 1: Seleciona "Bahia" (PIB: 300.5), anuncia "PIB".
-Jogador 2: Seleciona "São Paulo" (PIB: 1550.5).
-Ação: Clique em "Comparar PIB".
-Resultado: "São Paulo vence!" → Jogador 2 ganha 1 ponto.
+<div align="center">
+  <h3>🎮 Um jogo digital moderno e interativo sobre os estados brasileiros</h3>
+  <p>Desenvolvido com interface gráfica moderna, dados reais e funcionalidades avançadas</p>
+</div>
 
-## Sinta-se à vontade para abrir issues ou enviar pull requests
+---
+
+## ✨ Características Principais
+
+### 🎨 **Interface Moderna**
+- Design responsivo e intuitivo
+- Tema visual atrativo com gradientes
+- Animações suaves e feedback visual
+- Layout organizado em abas
+
+### 📊 **Dados Reais do Brasil**
+- 27 cartas (26 estados + Distrito Federal)
+- Informações atualizadas de 2023
+- População, PIB, área, pontos turísticos
+- Densidade populacional calculada automaticamente
+
+### 🛠️ **Funcionalidades Avançadas**
+- **Editor de Cartas**: Modifique atributos facilmente
+- **Comparador Interativo**: Compare cartas em tempo real
+- **Sistema de Salvamento**: Persistência de dados
+- **Estatísticas**: Análise completa do Brasil
+- **Validação**: Verificação de dados de entrada
+
+---
+
+## 🚀 Instalação Rápida
+
+### Linux (Ubuntu/Debian)
+```bash
+# Instalar dependências
+make install-deps
+
+# Compilar e executar
+make
+make run
+```
+
+### Windows (MSYS2)
+```bash
+# Instalar dependências
+make install-deps-windows
+
+# Compilar e executar
+make
+make run
+```
+
+### Verificar Dependências
+```bash
+make check-deps
+```
+
+---
+
+## 🎮 Como Jogar
+
+### 1. **Editor de Cartas**
+- Selecione um estado no menu suspenso
+- Edite os atributos conforme necessário
+- Clique em "Cadastrar Carta" para salvar
+- Visualize informações detalhadas em tempo real
+
+### 2. **Comparador de Cartas**
+- Escolha duas cartas diferentes
+- Selecione o atributo para comparar:
+  - 👥 **População**: Número de habitantes
+  - 💰 **PIB**: Produto Interno Bruto
+  - 🗺️ **Área**: Extensão territorial
+  - 🏛️ **Pontos Turísticos**: Atrações
+  - 📊 **Densidade**: Habitantes por km²
+- Veja o resultado da comparação
+
+### 3. **Sistema de Salvamento**
+- Salve suas modificações com "Salvar Cartas"
+- Carregue dados salvos com "Carregar Cartas"
+- Dados são persistidos em `cartas_salvas.txt`
+
+---
+
+## 📋 Comandos Disponíveis
+
+| Comando | Descrição |
+|---------|-----------|
+| `make` | Compilar o jogo |
+| `make run` | Executar o jogo |
+| `make debug` | Executar em modo debug |
+| `make clean` | Limpar arquivos de build |
+| `make install` | Instalar no sistema |
+| `make package` | Criar pacote de distribuição |
+| `make help` | Mostrar ajuda completa |
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+```
+Jogo_Super_Trunfo/
+├── 📁 assets/                 # Recursos (bandeiras, imagens)
+├── 📁 build/                  # Arquivos de compilação
+├── 📁 docs/                   # Documentação
+├── 📁 Jogo_Super_Trunfo_Fases/ # Versões antigas
+├── 📄 super_trunfo_moderno.c  # Código principal moderno
+├── 📄 super_trunfo_gui.c      # Versão original
+├── 📄 Makefile               # Sistema de build
+└── 📄 README.md              # Este arquivo
+```
+
+---
+
+## 🎯 Estados Incluídos
+
+| Região | Estados |
+|--------|---------|
+| **Norte** | Acre, Amapá, Amazonas, Pará, Rondônia, Roraima, Tocantins |
+| **Nordeste** | Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte, Sergipe |
+| **Centro-Oeste** | Distrito Federal, Goiás, Mato Grosso, Mato Grosso do Sul |
+| **Sudeste** | Espírito Santo, Minas Gerais, Rio de Janeiro, São Paulo |
+| **Sul** | Paraná, Rio Grande do Sul, Santa Catarina |
+
+---
+
+## 🔧 Requisitos Técnicos
+
+### Sistema Operacional
+- **Linux**: Ubuntu 18.04+, Debian 10+, ou equivalente
+- **Windows**: Windows 10+ com MSYS2
+
+### Dependências
+- **GCC**: Compilador C (versão 7.0+)
+- **GTK+3**: Biblioteca gráfica (versão 3.22+)
+- **pkg-config**: Gerenciador de dependências
+
+### Recursos Mínimos
+- **RAM**: 512 MB
+- **Espaço**: 50 MB
+- **Resolução**: 1024x768
+
+---
+
+## 🎨 Personalização
+
+### Adicionando Bandeiras
+1. Coloque imagens das bandeiras em `assets/bandeiras/`
+2. Nomeie os arquivos com a sigla do estado (ex: `sp.png`)
+3. Formatos suportados: PNG, JPG, SVG
+
+### Modificando Dados
+- Edite o array `cartas_iniciais` em `super_trunfo_moderno.c`
+- Atualize informações conforme necessário
+- Recompile com `make clean && make`
+
+---
+
+## 🐛 Solução de Problemas
+
+### Erro de Compilação
+```bash
+# Verificar dependências
+make check-deps
+
+# Instalar dependências faltantes
+make install-deps
+```
+
+### Interface Não Aparece
+```bash
+# Verificar se GTK+3 está instalado
+pkg-config --exists gtk+-3.0
+
+# Reinstalar dependências
+sudo apt-get install libgtk-3-dev
+```
+
+### Dados Não Salvam
+- Verifique permissões de escrita no diretório
+- Certifique-se de que o arquivo `cartas_salvas.txt` pode ser criado
+
+---
+
+## 📈 Roadmap Futuro
+
+- [ ] **Modo Multiplayer**: Suporte para 4 jogadores
+- [ ] **Sistema de Ranking**: Classificação de jogadores
+- [ ] **Temas Visuais**: Múltiplos temas de interface
+- [ ] **Efeitos Sonoros**: Música e sons de jogo
+- [ ] **Modo Online**: Jogar pela internet
+- [ ] **Estatísticas Avançadas**: Gráficos e análises
+- [ ] **Modo Educativo**: Informações históricas dos estados
+
+---
+
+## 🤝 Contribuindo
+
+1. **Fork** o projeto
+2. Crie uma **branch** para sua feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um **Pull Request**
+
+---
+
+### 👨‍💻 Desenvolvido por Adailton Daniel Oliveira Barbieri
+---
+
+## 🙏 Agradecimentos
+
+- **IBGE** - Dados demográficos e econômicos
+- **GTK+ Team** - Framework gráfico
+- **Comunidade Open Source** - Suporte e feedback
+
+---
+
+<div align="center">
+  <p>⭐ Se gostou do projeto, deixe uma estrela! ⭐</p>
+</div>

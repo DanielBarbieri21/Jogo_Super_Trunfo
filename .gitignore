@@ -1,0 +1,79 @@
+# 🇧🇷 Super Trunfo Brasil - Arquivo .gitignore
+# Versão: 2.0 Moderna
+
+# Arquivos de build
+build/
+*.o
+*.exe
+*.out
+*.app
+
+# Executáveis
+super_trunfo_moderno
+super_trunfo_gui
+aventureiro
+mestre
+novato
+
+# Arquivos de dados
+cartas_salvas.txt
+cartas.txt
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+*~
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de distribuição
+dist/
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+
+# Arquivos de teste
+test_output/
+coverage/
+
+# Arquivos de configuração local
+config.local
+.env
+
+# Arquivos de cache
+.cache/
+*.cache
+
+# Arquivos de log
+*.log
+logs/
+
+# Arquivos de documentação gerada
+docs/generated/
+
+# Arquivos de assets temporários
+assets/temp/
+assets/cache/
+
+# Arquivos de instalação
+installer/
+setup/
+
+# Arquivos de desenvolvimento
+dev/
+debug/
